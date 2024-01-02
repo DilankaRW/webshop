@@ -233,7 +233,90 @@ footer::before{
     width: 100%;
     height: 100%;
 }
-
+footer .inner-footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem,1fr));
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10rem;
+    z-index: 101;
+}
+footer .inner-footer .card{
+    margin: .5rem;
+}
+footer .inner-footer .card h3{
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-top: .5rem;
+    position: relative;
+}
+footer .inner-footer .card h3::before{
+    position: absolute;
+    content: '';
+    width: 60%;
+    height: 2px;
+    background: #000;
+    bottom: 0;
+    left: 0;
+}
+footer .inner-footer .card h3::after{
+    position: absolute;
+    content: '';
+    width: 10%;
+    height: 5px;
+    background-color: #000;
+    right: 40%;
+}
+footer .inner-footer .card li{
+    cursor: pointer;
+    line-height: 1.5rem;
+    color: #000;
+    font-size: 16px;
+}
+footer .inner-footer .card li:nth-child(1),
+footer .inner-footer .card p{
+    margin-top: 1rem;
+}
+footer .inner-footer .card p{
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+footer .inner-footer .card input{
+    width: 80%;
+    box-shadow: none;
+    border: 1px solid #000;
+    border-radius: unset;
+    margin: 0;
+}
+footer .inner-footer .card .input-field i{
+    color: #fff;
+    background: rgb(255 255 255/40%);
+    padding: 1rem;
+    margin-left: .3rem;
+    cursor: pointer;
+}
+footer .inner-footer .card .social-links{
+    margin-top: 1rem;
+}
+footer .inner-footer .card .social-links i{
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    line-height: 50px;
+    text-align: center;
+    color: var(--orange);
+    cursor: pointer;
+    padding: .6rem;
+    margin-left: 1rem;
+}
+footer .bottom-footer{
+    text-transform: capitalize;
+    text-align: center;
+    padding: 3rem 0;
+    border-top: 1px solid #000;
+}
 /* -------------media screen------------- */
 @media (max-width: 991px){
     #menu-btn{
