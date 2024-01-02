@@ -215,6 +215,59 @@ header .icons i:hover{
     transform: scale(1.0);
     transition: .2s linear;
 }
+/* -------------home slider------------- */
+.container-fluid{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.slider-item{
+    position: relative;
+    overflow: hidden;
+}
+.slider-item img{
+    width: 100%;
+}
+.slider-caption{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.slider-caption h1{
+    font-size: 40px;
+}
+.slider-caption p{
+    font-size: 20px;
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+.next,
+.prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f7b90f;
+    box-shadow: var(--box-shadow);
+    z-index: 2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.next{
+    right: 1rem;
+}
+.prev{
+    left: 1rem;
+}
 /* -------------footer------------- */
 footer{
     background: var(--orange);
@@ -266,13 +319,14 @@ footer .inner-footer .card h3::after{
     content: '';
     width: 10%;
     height: 5px;
-    background-color: #000;
+    background-color: #fff;
     right: 40%;
+    bottom: 0;
 }
 footer .inner-footer .card li{
     cursor: pointer;
     line-height: 1.5rem;
-    color: #000;
+    text-transform: capitalize;
     font-size: 16px;
 }
 footer .inner-footer .card li:nth-child(1),

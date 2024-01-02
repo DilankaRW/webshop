@@ -57,6 +57,9 @@
                 <i class="bi bi-whatsapp"></i>
             </div>
         </div>
+        <div>
+            <p>All Right Reserved | DILANKA</p>
+        </div>
     </footer>
 </body>
 </html>
