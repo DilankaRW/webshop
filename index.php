@@ -27,6 +27,7 @@
 </head>
 <body>
     <?php include 'header.php'; ?>
-    <script type="text/javascript" src="script2.php"></script>
+    <?php include 'footer.php'; ?>
+    <script type="text/javascript" src="script2.js"></script>
 </body>
 </html>

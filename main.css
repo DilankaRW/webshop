@@ -215,6 +215,25 @@ header .icons i:hover{
     transform: scale(1.0);
     transition: .2s linear;
 }
+/* -------------footer------------- */
+footer{
+    background: var(--orange);
+    width: 100%;
+    margin-top: -3.5rem;
+    position: relative;
+}
+footer::before{
+    position: absolute;
+    content: '';
+    background-image: url('img/hex.png');
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    opacity: .2;
+    width: 100%;
+    height: 100%;
+}
+
 /* -------------media screen------------- */
 @media (max-width: 991px){
     #menu-btn{
