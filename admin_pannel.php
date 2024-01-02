@@ -13,6 +13,11 @@
         header('location:login.php');
     }
 ?>
+<style type="text/css">
+    <?php
+        include 'style.css';
+    ?>
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
