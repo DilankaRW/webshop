@@ -28,7 +28,6 @@
     <title>home page</title>
 </head>
 <body>
-    <?php include 'header.php'; ?>
     <!-- -------------------------------------home slider------------------------------------------- -->
     <div class="container-fluid">
         <div class="hero-slider">
